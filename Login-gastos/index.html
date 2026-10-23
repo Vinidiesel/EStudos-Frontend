@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Calculadora Navegador</title>
+</head>
+<body>
+    <!-- <main> indica o conteúdo principal do app -->
+    <main class="container">
+        <header>
+            <h1>Calculadora</h1>
+        </header>
+        
+        <!-- Input para o display -->
+        <input type="text" id="display" readonly>
+
+        <!-- div para agrupar o teclado de botões -->
+        <div class="teclado">
+            <button type="button" id="CE" onclick="apagarTudo()">CE</button>
+            <button type="button" id="C" onclick="apagarUltimo()">C</button>
+            <button type="button" id="porcentagem" onclick="adicionar('%')">%</button>
+            <button type="button" id="divisao" onclick="adicionar('/')">/</button>
+
+            <button type="button" id="7" onclick="adicionar('7')">7</button>
+            <button type="button" id="8" onclick="adicionar('8')">8</button>
+            <button type="button" id="9" onclick="adicionar('9')">9</button>
+            <button type="button" id="multiplicacao" onclick="adicionar('X')">X</button>
+
+            <button type="button" id="4" onclick="adicionar('4')">4</button>
+            <button type="button" id="5" onclick="adicionar('5')">5</button>
+            <button type="button" id="6" onclick="adicionar('6')">6</button>
+            <button type="button" id="subtracao" onclick="adicionar('-')">-</button>
+
+            <button type="button" id="1" onclick="adicionar('1')">1</button>
+            <button type="button" id="2" onclick="adicionar('2')">2</button>
+            <button type="button" id="3" onclick="adicionar('3')">3</button>
+            <button type="button" id="adisao" onclick="adicionar('+')">+</button>
+
+            <button type="button" id="0" onclick="adicionar('0')">0</button>
+            <button type="button" id="ponto" onclick="adicionar('.')">.</button>
+            <button type="button" id="resultado" onclick="resultado()">=</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
